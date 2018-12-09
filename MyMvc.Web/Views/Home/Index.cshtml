@@ -1,7 +1,19 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@using Microsoft.AspNetCore.Hosting;
+@using Microsoft.Extensions.Options;
+@using MyMvc.Web.Models;
 
+@inject IHostingEnvironment env
+@inject IOptions<AppSettings> appSettings
+
+<div>
+    Current environment is:@env
+</div>
+<div>
+    TestString in AppSettings is :@appSettings.Value.TestString
+</div>
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>

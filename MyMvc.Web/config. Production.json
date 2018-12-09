@@ -1,0 +1,5 @@
+{
+"AppSettings":{
+    "TestString": "This is production environment"
+  }
+}
