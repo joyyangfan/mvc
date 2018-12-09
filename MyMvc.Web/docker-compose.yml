@@ -5,9 +5,10 @@ services:
         # image: ':latest'
         build: .
         restart: always
-        #environment:
+            environment:
+              - ASPNETCORE_ENVIRONMENT=Test
         ports:
-          - '5001:5000'
+          - '5555:5000'
         command: MyMvc.Web.dll
-        #volumes:
-          # - '/data/:/publish/data'
+        volumes:
+           - /log/:/publish/log
