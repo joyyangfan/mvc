@@ -1,0 +1,13 @@
+version: '2'
+services:
+    dotnetcore:
+        container_name: mymvc.web.compose
+        # image: ':latest'
+        build: .
+        restart: always
+        #environment:
+        ports:
+          - '5001:5000'
+        command: CM.APP.API.dll
+        #volumes:
+          # - '/data/:/publish/data'
