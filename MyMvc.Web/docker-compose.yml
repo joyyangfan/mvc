@@ -5,8 +5,8 @@ services:
         # image: ':latest'
         build: .
         restart: always
-            environment: 
-              - ASPNETCORE_ENVIRONMENT=Test
+        environment:
+          - ASPNETCORE_ENVIRONMENT=Test
         ports:
           - '5555:5000'
         command: MyMvc.Web.dll
