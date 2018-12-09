@@ -9,7 +9,7 @@
 @inject IOptions<AppSettings> appSettings
 
 <div>
-    Current environment is:@env
+    Current environment is:@env.EnvironmentName
 </div>
 <div>
     TestString in AppSettings is :@appSettings.Value.TestString
