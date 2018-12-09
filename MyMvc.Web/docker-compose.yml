@@ -1,14 +1,14 @@
 version: '2'
-services:
-    dotnetcore:
+services: 
+    dotnetcore: 
         container_name: mymvc.web.compose
         # image: ':latest'
         build: .
         restart: always
-            environment:
+            environment: 
               - ASPNETCORE_ENVIRONMENT=Test
         ports:
           - '5555:5000'
         command: MyMvc.Web.dll
-        volumes:
+        volumes: 
            - /log/:/publish/log:rw
