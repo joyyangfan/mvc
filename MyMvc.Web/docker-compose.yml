@@ -11,4 +11,4 @@ services:
           - '5555:5000'
         command: MyMvc.Web.dll
         volumes:
-           - /log/:/publish/log
+           - /log/:/publish/log:rw
